@@ -1,0 +1,41 @@
+---
+title: "Week 1 Lab Assignment"
+author: "Shea Zhao"
+date: "April 15, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1.) Write a code that swaps variables.
+
+```{r}
+cat <- 'meow'
+dog <- 'bark'
+
+swap <- cat
+swap # meow
+
+cat <- dog
+cat #bark
+
+dog <- swap
+dog #meow
+
+print(cat)
+print(dog)
+
+```
+
+# 2.) write a code in R which given your first and last name prints your full name.
+
+```{r}
+first <- 'Shea'
+last <- 'Zhao'
+
+paste(first, last) # separation
+paste(first, last, sep = '')  # no separation
+```
+
